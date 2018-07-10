@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.foodandcalorietracker.InsertActivity">
+
+    <Button
+        android:id="@+id/Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/Insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/Home"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/History"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/Settings"
+        android:text="History" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Settings" />
+
+    <TextView
+        android:id="@+id/Meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Type"
+        android:layout_alignStart="@+id/Type"
+        android:text="Meal:"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/MealName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/Date"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TotalCalConsumed"
+        android:layout_below="@+id/MealName"
+        android:layout_marginTop="25dp"
+        android:text="Type of Meal:"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/MealSpinner"
+        style="@android:style/Widget.Material.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_above="@+id/TotalCalConsumed"
+        android:layout_alignStart="@+id/History" />
+
+    <TextView
+        android:id="@+id/TotalCalConsumed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Type"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="31dp"
+        android:text="Total Calories:"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/CalorieConsumed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/TotalCalConsumed"
+        android:layout_toEndOf="@+id/TotalCalConsumed"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Time"
+        android:layout_below="@+id/Time"
+        android:layout_marginTop="17dp"
+        android:text="Date:"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/DatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/DisplayDate"
+        android:layout_alignStart="@+id/TimePicker"
+        android:text="Select Date" />
+
+    <Button
+        android:id="@+id/TimePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/DisplayTime"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:text="Select Time" />
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TotalCalConsumed"
+        android:layout_below="@+id/CalorieConsumed"
+        android:layout_marginTop="15dp"
+        android:text="Time:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/DisplayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Time"
+        android:layout_alignBottom="@+id/Time"
+        android:layout_marginStart="9dp"
+        android:layout_toEndOf="@+id/Home"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/DisplayDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Date"
+        android:layout_alignBottom="@+id/Date"
+        android:layout_alignStart="@+id/DisplayTime"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/AddMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Home"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:text="Add Meal!" />
+
+
+</RelativeLayout>

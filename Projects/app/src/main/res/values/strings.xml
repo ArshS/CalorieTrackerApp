@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FoodAndCalorieTracker</string>
+    <string name="title_activity_insert">Insert</string>
+</resources>

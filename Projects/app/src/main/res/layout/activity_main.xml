@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.foodandcalorietracker.MainActivity">
+
+    <Button
+        android:id="@+id/Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/Insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/Home"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/History"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/Settings"
+        android:text="History" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Settings" />
+
+    <TextView
+        android:id="@+id/DisplayMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/TotalCaloriesAllowed"
+        android:layout_marginTop="18dp"
+        android:width="1000dip"
+        android:text="Hello Name"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/CaloriesRemaining"
+        android:layout_below="@+id/CaloriesRemaining"
+        android:layout_marginTop="16dp"
+        android:text="Last Meal Eaten:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TotalCaloriesAllowed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/DisplayMessage"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="31dp"
+        android:text="Allowed Calories"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/CaloriesConsumed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TotalCaloriesAllowed"
+        android:layout_below="@+id/TotalCaloriesAllowed"
+        android:text="Calories Consumed"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/CaloriesRemaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/CaloriesConsumed"
+        android:layout_below="@+id/CaloriesConsumed"
+        android:text="Calories Remaining"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/DisplayMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Meal"
+        android:layout_below="@+id/Meal"
+        android:textSize="24sp" />
+
+</RelativeLayout>

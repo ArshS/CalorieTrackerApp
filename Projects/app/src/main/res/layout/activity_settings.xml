@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.foodandcalorietracker.SettingsActivity">
+
+    <Button
+        android:id="@+id/Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="Home" />
+
+    <Button
+        android:id="@+id/Insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/Home"
+        android:text="Insert" />
+
+    <Button
+        android:id="@+id/History"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/Settings"
+        android:text="History" />
+
+    <Button
+        android:id="@+id/Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Settings" />
+
+    <TextView
+        android:id="@+id/FirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ClearDatabase"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:text="First Name:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/LastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/FirstName"
+        android:layout_below="@+id/FirstName"
+        android:text="Last Name:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Age"
+        android:layout_below="@+id/Age"
+        android:text="Weight:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Weight"
+        android:layout_below="@+id/InsertWeight"
+        android:text="Height: Ft:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Inches"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/InsertFeet"
+        android:layout_toEndOf="@+id/InsertFeet"
+        android:text="In:"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/InsertFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/FirstName"
+        android:layout_toEndOf="@+id/FirstName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/InsertLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/InsertFirstName"
+        android:layout_alignTop="@+id/LastName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/InsertWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Weight"
+        android:layout_toEndOf="@+id/Weight"
+        android:ems="10"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/InsertFeet"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Height"
+        android:layout_toEndOf="@+id/Height"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/InsertInches"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Inches"
+        android:layout_toEndOf="@+id/Inches"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/ClearDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/FirstName"
+        android:layout_marginTop="10dp"
+        android:text="Delete Meal History" />
+
+    <Button
+        android:id="@+id/SaveProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/History"
+        android:layout_alignEnd="@+id/InsertInches"
+        android:layout_marginBottom="7dp"
+        android:text="Save" />
+
+    <TextView
+        android:id="@+id/BMR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Goals"
+        android:layout_below="@+id/GoalsSpinner"
+        android:text="BMR:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/BMRDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/BMR"
+        android:layout_alignBottom="@+id/BMR"
+        android:layout_toEndOf="@+id/BMR"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/LastName"
+        android:layout_below="@+id/LastName"
+        android:text="Gender:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Gender"
+        android:layout_below="@+id/Gender"
+        android:text="Age:"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/InsertAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Age"
+        android:layout_alignBottom="@+id/Age"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/MFRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="325dp"
+        android:layout_toEndOf="@+id/Gender"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Female" />
+
+    </RadioGroup>
+
+
+    <Spinner
+        android:id="@+id/ActivitySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_below="@+id/InsertFeet"
+        android:layout_toEndOf="@+id/Activity" />
+
+    <TextView
+        android:id="@+id/Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Height"
+        android:layout_below="@+id/Height"
+        android:text="Activity:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Goals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Activity"
+        android:layout_below="@+id/Activity"
+        android:text="Goals:"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/GoalsSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_below="@+id/ActivitySpinner"
+        android:layout_toEndOf="@+id/Goals" />
+
+</RelativeLayout>
